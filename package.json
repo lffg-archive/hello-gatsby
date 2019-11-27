@@ -1,0 +1,63 @@
+{
+  "private": true,
+  "name": "@lffg/gatsby-ts",
+  "version": "0.0.0",
+  "description": "Gatsby starter using TypeScript",
+  "author": "Luiz Felipe Gonçalves <https://github.com/lffg>",
+  "license": "MIT",
+  "scripts": {
+    "format:raw": "prettier --write",
+    "format": "yarn format:raw '**/*.{js,jsx,ts,tsx,json,vue,css,scss,less,graphql,gql,md,mdx,yml,yaml}'",
+    "lint": "yarn lint:raw .",
+    "lint:fix": "yarn lint:raw --fix .",
+    "lint:raw": "eslint --ext .js,.jsx,.ts,.tsx --max-warnings=0",
+    "test": "echo \"TODO(lffg): Add Jest tests.\"",
+    "check:ts": "tsc --noEmit --skipLibCheck",
+    "check:all": "yarn lint && yarn check:ts && yarn test",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "start": "yarn develop",
+    "develop": "gatsby develop"
+  },
+  "dependencies": {
+    "@reach/router": "^1.2.1",
+    "gatsby": "^2.18.4",
+    "gatsby-plugin-react-helmet": "^3.1.16",
+    "gatsby-plugin-typescript": "^2.1.20",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
+    "typescript": "^3.7.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@types/jest": "^24.0.23",
+    "@types/node": "^12.12.14",
+    "@types/reach__router": "^1.2.6",
+    "@types/react": "^16.9.13",
+    "@types/react-dom": "^16.9.4",
+    "@types/react-helmet": "^5.0.14",
+    "eslint": "6.7.1",
+    "eslint-config-lffg": "^9.0.0",
+    "husky": "^3.1.0",
+    "jest": "^24.9.0",
+    "lint-staged": "^9.4.3",
+    "prettier": "^1.19.1",
+    "ts-jest": "^24.2.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && yarn check:ts && yarn test"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,vue,css,scss,less,graphql,gql,md,mdx,yml,yaml}": [
+      "yarn format:raw",
+      "git add"
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "yarn lint:raw --ignore-pattern '!.prettierrc.js'",
+      "git add"
+    ]
+  }
+}

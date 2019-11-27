@@ -1,0 +1,12 @@
+{
+  "extends": "lffg",
+  "overrides": [
+    {
+      "files": "src/pages/*",
+      "rules": {
+        "import/prefer-default-export": "warn",
+        "import/no-default-export": "off"
+      }
+    }
+  ]
+}

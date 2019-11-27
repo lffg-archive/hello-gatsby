@@ -1,0 +1,50 @@
+body {
+  background-color: #212121;
+}
+
+a {
+  color: #3f51b5;
+  text-decoration: none;
+  border-bottom: solid 1px currentColor;
+}
+
+a:hover {
+  background-color: #3f51b5;
+  color: #fff;
+  border-bottom-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.app {
+  background-color: #fff;
+  color: #212121;
+  font-family: 'SF Mono', 'Fira Code', 'Monaco', 'Menlo', 'Consolas',
+    'Source Code Pro', 'Courier', 'Courier New', 'Courier', monospace;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.app__header {
+  padding: 2rem 2rem 0 2rem;
+}
+
+.app__container {
+  padding: 0 2rem 2rem 2rem;
+}
+
+.app__footer {
+  margin-top: 1.5rem;
+  padding: 2rem;
+  border-top: solid 3px #3f51b5;
+  background-color: #212121;
+  color: #fff;
+  box-shadow: inset 0 8px 5px rgba(63, 81, 181, 0.2);
+}
