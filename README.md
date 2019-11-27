@@ -1,5 +1,7 @@
-# gatsby-typescript-app-starter
+# Gatsby TypeScript
+
+Create a new application with it using the following command:
 
 ```
-gatsby new myapp https://github.com/benawad/gatsby-typescript-app-starter
+gatsby new myapp https://github.com/lffg/gatsby-typescript
 ```
