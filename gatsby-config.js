@@ -12,8 +12,7 @@ module.exports = {
 
   plugins: [
     'gatsby-plugin-react-helmet',
-
-    // Adds TypeScript:
-    'gatsby-plugin-typescript'
+    'gatsby-plugin-typescript',
+    'gatsby-plugin-emotion'
   ]
 };

@@ -1,8 +1,9 @@
 import { useStaticQuery, graphql } from 'gatsby';
 import React from 'react';
+import * as S from './layout-styles';
 
-import './normalize.css';
-import './app.css';
+import './css/normalize.css';
+import './css/global.css';
 
 const PAGE_QUERY = graphql`
   query SiteTitleQuery {
@@ -24,14 +25,12 @@ export function Layout({ children }: Props) {
   const { title, author } = data.site.siteMetadata;
 
   return (
-    <div className="app">
-      <header className="app__header">
+    <S.App>
+      <S.Header>
         <strong>{title}</strong>
-      </header>
-      <main className="app__container">{children}</main>
-      <footer className="app__footer">
-        © {author} &middot; Built with Gatsby
-      </footer>
-    </div>
+      </S.Header>
+      <S.Container>{children}</S.Container>
+      <S.Footer>© {author} &middot; Built with Gatsby</S.Footer>
+    </S.App>
   );
 }

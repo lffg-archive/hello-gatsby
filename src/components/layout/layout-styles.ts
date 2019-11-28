@@ -1,25 +1,6 @@
-a {
-  color: #3f51b5;
-  text-decoration: none;
-  border-bottom: solid 1px currentColor;
-}
+import styled from '@emotion/styled';
 
-a:hover {
-  background-color: #3f51b5;
-  color: #fff;
-  border-bottom-color: transparent;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.app {
+export const App = styled.div`
   max-width: 850px;
   background-color: #fff;
   color: #212121;
@@ -27,26 +8,24 @@ h6 {
     'Source Code Pro', 'Courier', 'Courier New', 'Courier', monospace;
   font-size: 18px;
   line-height: 1.65;
-}
 
-@media screen and (min-width: 850px) {
-  .app {
+  @media screen and (min-width: 850px) {
     border: solid 1px #000;
     margin: 1rem;
   }
-}
+`;
 
-.app__header {
+export const Header = styled.header`
   padding: 2rem 2rem 0 2rem;
-}
+`;
 
-.app__container {
+export const Container = styled.main`
   padding: 0 2rem 2rem 2rem;
-}
+`;
 
-.app__footer {
+export const Footer = styled.footer`
   margin-top: 1.5rem;
   padding: 2rem;
   background-color: #212121;
   color: #fff;
-}
+`;
