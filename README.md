@@ -3,5 +3,5 @@
 Create a new application with it using the following command:
 
 ```
-gatsby new myapp https://github.com/lffg/gatsby-typescript
+gatsby new project-name https://github.com/lffg/hello-gatsby
 ```
