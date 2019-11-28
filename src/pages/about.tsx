@@ -8,7 +8,18 @@ export default function About() {
     <Layout>
       <Seo title="About" />
       <h1>About</h1>
-      <p>Welcome to the about page.</p>
+      <p>
+        This website was developed using Gatsby. It is open-source. Check it out
+        on{' '}
+        <a
+          href="https://github.com/lffg/hello-gatsby"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+        .
+      </p>
       <Link to="/">Go back to the homepage.</Link>
     </Layout>
   );
