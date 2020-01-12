@@ -63,7 +63,8 @@ typings/
 # MacOS .DS_Store
 .DS_Store
 
-# Next.js build output
+# Next.js and Gatsby
+.cache
 .next
 
 # Other files and folders
@@ -72,6 +73,5 @@ build
 dist
 __ignore__*
 
-# Gatsby files
-.cache
+# Current project only:
 public
